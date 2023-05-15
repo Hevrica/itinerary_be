@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-05-15T08:04:21.096Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="62oUDlWhDRKhBmlb1YP0" version="21.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-15T08:04:34.780Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="zqBlgen7wn9WZ8J0SbXJ" version="21.3.0" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="955" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="1674" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -550,7 +550,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ZGmDLkgrw2R3Wv-BcuwS-219" value="&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;COM01 게시글_구분&lt;/span&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;COM01_01 여행일정&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;COM01_02 게시판&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;COM01_03 덧글&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;COM01_04 투표&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;COM02 구분_코드&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;COM02_01 장소&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;COM02_02 음식점&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;...&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="640" y="930" width="200" height="160" as="geometry" />
+          <mxGeometry x="570" y="820" width="200" height="160" as="geometry" />
         </mxCell>
         <mxCell id="ZGmDLkgrw2R3Wv-BcuwS-220" value="게시판" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" parent="1" vertex="1">
           <mxGeometry x="320" y="240" width="200" height="240" as="geometry" />
