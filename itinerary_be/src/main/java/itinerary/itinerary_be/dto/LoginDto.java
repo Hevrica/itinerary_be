@@ -12,10 +12,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserDto {
-	
-	private String username;
+public class LoginDto {
+	private String id;
 	private String password;
-	private String nickname;
 	private Set<Authority> authorities;
 }
