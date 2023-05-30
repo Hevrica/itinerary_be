@@ -22,8 +22,8 @@ import lombok.RequiredArgsConstructor;
 public class SecurityConfig {
 	
 	private final JwtProvider jwtProvider;
-	private JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
-	private JwtAccessDeniedHandler jwtAccessDeniedHandler;
+	private final JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
+	private final JwtAccessDeniedHandler jwtAccessDeniedHandler;
 	
 	@Bean
 	public PasswordEncoder passwordEncoder() {

@@ -1,15 +1,16 @@
 package itinerary.itinerary_be.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import itinerary.itinerary_be.dto.JwtDto;
 import itinerary.itinerary_be.dto.LoginDto;
-import itinerary.itinerary_be.entity.Member;
+import itinerary.itinerary_be.dto.MemberDto;
 import itinerary.itinerary_be.service.MemberService;
+import lombok.RequiredArgsConstructor;
 
 /**
  * 회원 컨트롤러
@@ -17,58 +18,59 @@ import itinerary.itinerary_be.service.MemberService;
  * @version 0.1
  */
 @RestController
+@RequestMapping("/members")
+@RequiredArgsConstructor
 public class MemberController {
 	
-	@Autowired
-	private MemberService memberService;
+	private final MemberService memberService;
 	
 	/**
 	 * 회원 생성
-	 * @param member 회원 정보
+	 * @param dto 회원 정보
 	 * @return 성공시 true, 실패 false
 	 */
-	@PostMapping("/members/new")
-	public String create(Member member) {
+	@PostMapping("/new")
+	public String create(MemberDto dto) {
 		return "";
 	}
 	
 	/**
 	 * 회원 조회
-	 * @param member 회원 정보
-	 * @return
+	 * @param dto 회원 정보
+	 * @return member 회원 정보
 	 */
-	@GetMapping("/members/read")
-	public String read(Member member) {
+	@GetMapping("/read")
+	public String read(MemberDto dto) {
 		return "";
 	}
 	
 	/**
 	 * 회원 수정
-	 * @param member 회원 정보
-	 * @return
+	 * @param dto 회원 정보
+	 * @return 성공시 true, 실패 false
 	 */
-	@PostMapping("/members/update")
-	public String update(Member member) {
+	@PostMapping("/update")
+	public String update(MemberDto dto) {
 		return "";
 	}
 	
 	/**
 	 * 회원 삭제
-	 * @param member 회원 정보
-	 * @return
+	 * @param dto 회원 정보
+	 * @return 성공시 true, 실패 false
 	 */
-	@PostMapping("/members/delete")
-	public String delete(Member member) {
+	@PostMapping("/delete")
+	public String delete(MemberDto dto) {
 		return "";
 	}
 	
 	/**
 	 * 로그인
-	 * @param loginDto 로그인 정보
-	 * @return
+	 * @param dto 로그인 정보
+	 * @return jwt 객체
 	 */
-	@PostMapping("/members/login")
-	public ResponseEntity<JwtDto> login(LoginDto loginDto) {
-		return ResponseEntity.ok(memberService.login(loginDto.getId(), loginDto.getPassword()));
+	@PostMapping("/login")
+	public ResponseEntity<JwtDto> login(LoginDto dto) {
+		return ResponseEntity.ok(memberService.login(dto.getId(), dto.getPassword()));
 	}
 }

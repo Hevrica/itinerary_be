@@ -9,19 +9,15 @@ import itinerary.itinerary_be.config.jwt.JwtProvider;
 import itinerary.itinerary_be.dto.JwtDto;
 import itinerary.itinerary_be.entity.Member;
 import itinerary.itinerary_be.repository.MemberRepository;
+import lombok.RequiredArgsConstructor;
 
 @Service
+@RequiredArgsConstructor
 public class MemberService {
 	
 	private final MemberRepository repository;
 	private final AuthenticationManagerBuilder builder;
 	private final JwtProvider provider;
-	
-	public MemberService(MemberRepository repository, AuthenticationManagerBuilder builder, JwtProvider provider) {
-		this.repository = repository;
-		this.builder = builder;
-		this.provider = provider;
-	}
 	
 	/**
 	 * 회원 가입
